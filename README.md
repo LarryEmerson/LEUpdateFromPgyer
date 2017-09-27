@@ -3,6 +3,9 @@
 [![Version](https://img.shields.io/cocoapods/v/LEUpdateFromPgyer.svg?style=flat)](http://cocoapods.org/pods/LEUpdateFromPgyer)
 [![License](https://img.shields.io/cocoapods/l/LEUpdateFromPgyer.svg?style=flat)](http://cocoapods.org/pods/LEUpdateFromPgyer)
 [![Platform](https://img.shields.io/cocoapods/p/LEUpdateFromPgyer.svg?style=flat)](http://cocoapods.org/pods/LEUpdateFromPgyer)
+## 示例
+![](https://github.com/LarryEmerson/LEAllFrameworksGif/blob/master/v23_v24.jpg)
+![](https://github.com/LarryEmerson/LEAllFrameworksGif/blob/master/v24_v25.jpg)
 
 ## 如何使用
 ### 1.AutoBuildIpaAndUploadToPgyer使用环境部署：
