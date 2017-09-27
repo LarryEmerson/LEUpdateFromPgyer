@@ -24,6 +24,7 @@
  buildNumber=$(($buildNumber + 1))
  /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $buildNumber" "$INFOPLIST_FILE"
  ``` 
+ - **上传后的第一个版本需要进入蒲公英网页设置”Build 版本号设置“为”使用App本身的Build版本号“**（需要比较App的build及蒲公英返回的build）
 ### 2. LEUpdateFromPgyer引入方式：
  - pod 引入 #import <LEUpdateFromPgyer/LEUpdateFromPgyer.h>
   
