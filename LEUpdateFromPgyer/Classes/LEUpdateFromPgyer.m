@@ -112,7 +112,7 @@ Singleton_implementation(LEUpdateFromPgyer)
     if(targetPgy){
         dispatch_async(dispatch_get_main_queue(), ^{
             if(compareVersion([targetPgy.version UTF8String], [version UTF8String]) > 0 || ([targetPgy.version isEqualToString: version] && targetPgy.build > build)){
-                sheet=[[UIActionSheet alloc] initWithTitle:[NSString stringWithFormat:@"%@\n%@",targetPgy.title,targetPgy.detail] delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:targetPgy.canIgnore?@"永久忽略":nil otherButtonTitles:@"更新", nil];
+                sheet=[[UIActionSheet alloc] initWithTitle:[NSString stringWithFormat:@"%@\n%@(%d)->%@(%d)\n%@",targetPgy.title,version,build,targetPgy.version,targetPgy.build, targetPgy.detail] delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:targetPgy.canIgnore?@"永久忽略":nil otherButtonTitles:@"更新", nil];
                 [sheet showInView:[UIApplication sharedApplication].keyWindow];
             }
         });

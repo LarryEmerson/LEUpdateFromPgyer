@@ -44,7 +44,7 @@
 }
 
 
-- (void)applicationDidBecomeActive:(UIApplication *)application { 
+- (void)applicationDidBecomeActive:(UIApplication *)application {
     NSDictionary *bundle = [[NSBundle mainBundle] infoDictionary];
     NSString *pgy=[bundle objectForKey:@"PgyUpdate"];
     if(pgy&&[pgy boolValue]){
