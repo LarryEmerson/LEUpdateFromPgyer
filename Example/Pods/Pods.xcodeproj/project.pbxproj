@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52ABA8356226AB28DF512A4AEE3F20E8 /* LEUpdateFromPgyer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD31F9E8D2EBCC172A908FF06F047EF7 /* LEUpdateFromPgyer-dummy.m */; };
+		593AB15188B9C2A8DADDD84AF6E0998A /* Pods-LEUpdateFromPgyer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFBE25AFACF5859E53023822B30D051 /* Pods-LEUpdateFromPgyer-dummy.m */; };
+		825A827C3B09F9BF6D156E2F5D4656C9 /* LEUpdateFromPgyer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5549DFA00B4AA8EF6A69B0BE823FD19E /* LEUpdateFromPgyer.m */; };
+		9ABBB4578B840148A9451368F9CCB012 /* Pods-LEUpdateFromPgyer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97983EFB5CCE9F1D486D25010A80876A /* Pods-LEUpdateFromPgyer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B06518A8ECE77F8340152F73755F6D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A9AAF271591B07A8E5A5DD35FAD3402C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D84D26223B27E68442C5EEEF263241F5 /* LEUpdateFromPgyer.h in Headers */ = {isa = PBXBuildFile; fileRef = C4AFCCAD188EE43C49C82B834E10ED30 /* LEUpdateFromPgyer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA4DF6C2399DB886589F5BEAC1743720 /* LEUpdateFromPgyer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3BDE9C13777DE856C52CD72636FE8CE /* LEUpdateFromPgyer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7943E4A3269BFBFEAB0656FA5F59E48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A877C8F33F3A431BC47BEA29F8E9C84;
+			remoteInfo = LEUpdateFromPgyer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05131F960CCF8110DAAAFC89A4312C87 /* LEUpdateFromPgyer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LEUpdateFromPgyer.xcconfig; sourceTree = "<group>"; };
+		19DBCDFA06DF46CB647514DCFE48F4C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24FC8C50DAD523869172CDA24E2DC43A /* Pods-LEUpdateFromPgyer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LEUpdateFromPgyer.release.xcconfig"; sourceTree = "<group>"; };
+		3D092594C3F6E98802CB5D666E00E792 /* LEUpdateFromPgyer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LEUpdateFromPgyer-prefix.pch"; sourceTree = "<group>"; };
+		5549DFA00B4AA8EF6A69B0BE823FD19E /* LEUpdateFromPgyer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LEUpdateFromPgyer.m; path = LEUpdateFromPgyer/Classes/LEUpdateFromPgyer.m; sourceTree = "<group>"; };
+		5AFBE25AFACF5859E53023822B30D051 /* Pods-LEUpdateFromPgyer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LEUpdateFromPgyer-dummy.m"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6D76A9E606B7348917664C171CC7F79D /* Pods-LEUpdateFromPgyer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LEUpdateFromPgyer.modulemap"; sourceTree = "<group>"; };
+		7B073DFE492DD339A22D5DA5B61BD4E3 /* Pods-LEUpdateFromPgyer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LEUpdateFromPgyer.debug.xcconfig"; sourceTree = "<group>"; };
+		885A9A86AA80C7A74E184EB40E4551F8 /* LEUpdateFromPgyer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LEUpdateFromPgyer.modulemap; sourceTree = "<group>"; };
+		8C2CC63B701EF38D32830B1B125EF82E /* Pods-LEUpdateFromPgyer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LEUpdateFromPgyer-acknowledgements.plist"; sourceTree = "<group>"; };
+		9200136F242FFAA7AAEA8BDD9F4BD340 /* Pods-LEUpdateFromPgyer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LEUpdateFromPgyer-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97983EFB5CCE9F1D486D25010A80876A /* Pods-LEUpdateFromPgyer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LEUpdateFromPgyer-umbrella.h"; sourceTree = "<group>"; };
+		BD31F9E8D2EBCC172A908FF06F047EF7 /* LEUpdateFromPgyer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LEUpdateFromPgyer-dummy.m"; sourceTree = "<group>"; };
+		C2B802F4495FA6593E1E9E1C75CA23CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3BDE9C13777DE856C52CD72636FE8CE /* LEUpdateFromPgyer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LEUpdateFromPgyer-umbrella.h"; sourceTree = "<group>"; };
+		C4AFCCAD188EE43C49C82B834E10ED30 /* LEUpdateFromPgyer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LEUpdateFromPgyer.h; path = LEUpdateFromPgyer/Classes/LEUpdateFromPgyer.h; sourceTree = "<group>"; };
+		DBE6BEA8B28DF9C3B8031FF884D1F475 /* LEUpdateFromPgyer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LEUpdateFromPgyer.framework; path = LEUpdateFromPgyer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E93748A1FC7B2B3F3A3816C977A354BC /* Pods-LEUpdateFromPgyer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LEUpdateFromPgyer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E9A58FCAD618294621A4BB81938D5B2B /* Pods_LEUpdateFromPgyer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LEUpdateFromPgyer.framework; path = "Pods-LEUpdateFromPgyer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF3D723FE3E5F5D6D66AFAD02F3CAF5B /* Pods-LEUpdateFromPgyer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LEUpdateFromPgyer-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DC4B6E80BC28BBF24DFE94722AA04C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B06518A8ECE77F8340152F73755F6D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFA49C93533834D50E230F4CF9628DA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9AAF271591B07A8E5A5DD35FAD3402C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F844FF1A0B7051151ED0607ABDCF989 /* Pods-LEUpdateFromPgyer */ = {
+			isa = PBXGroup;
+			children = (
+				19DBCDFA06DF46CB647514DCFE48F4C7 /* Info.plist */,
+				6D76A9E606B7348917664C171CC7F79D /* Pods-LEUpdateFromPgyer.modulemap */,
+				E93748A1FC7B2B3F3A3816C977A354BC /* Pods-LEUpdateFromPgyer-acknowledgements.markdown */,
+				8C2CC63B701EF38D32830B1B125EF82E /* Pods-LEUpdateFromPgyer-acknowledgements.plist */,
+				5AFBE25AFACF5859E53023822B30D051 /* Pods-LEUpdateFromPgyer-dummy.m */,
+				EF3D723FE3E5F5D6D66AFAD02F3CAF5B /* Pods-LEUpdateFromPgyer-frameworks.sh */,
+				9200136F242FFAA7AAEA8BDD9F4BD340 /* Pods-LEUpdateFromPgyer-resources.sh */,
+				97983EFB5CCE9F1D486D25010A80876A /* Pods-LEUpdateFromPgyer-umbrella.h */,
+				7B073DFE492DD339A22D5DA5B61BD4E3 /* Pods-LEUpdateFromPgyer.debug.xcconfig */,
+				24FC8C50DAD523869172CDA24E2DC43A /* Pods-LEUpdateFromPgyer.release.xcconfig */,
+			);
+			name = "Pods-LEUpdateFromPgyer";
+			path = "Target Support Files/Pods-LEUpdateFromPgyer";
+			sourceTree = "<group>";
+		};
+		47C1D54447BC0BC7461609FE1EABF79D /* LEUpdateFromPgyer */ = {
+			isa = PBXGroup;
+			children = (
+				C4AFCCAD188EE43C49C82B834E10ED30 /* LEUpdateFromPgyer.h */,
+				5549DFA00B4AA8EF6A69B0BE823FD19E /* LEUpdateFromPgyer.m */,
+				BAA3330B48595203E33FD9017D6C5EBA /* Support Files */,
+			);
+			name = LEUpdateFromPgyer;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		686DE434B8E465382422032ACEEA9028 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F844FF1A0B7051151ED0607ABDCF989 /* Pods-LEUpdateFromPgyer */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				B75A052E6782D1C594B20897797AFA56 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9E0AA1A0555083798C327A7F9927D24A /* Products */,
+				686DE434B8E465382422032ACEEA9028 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9E0AA1A0555083798C327A7F9927D24A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBE6BEA8B28DF9C3B8031FF884D1F475 /* LEUpdateFromPgyer.framework */,
+				E9A58FCAD618294621A4BB81938D5B2B /* Pods_LEUpdateFromPgyer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B75A052E6782D1C594B20897797AFA56 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47C1D54447BC0BC7461609FE1EABF79D /* LEUpdateFromPgyer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BAA3330B48595203E33FD9017D6C5EBA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2B802F4495FA6593E1E9E1C75CA23CB /* Info.plist */,
+				885A9A86AA80C7A74E184EB40E4551F8 /* LEUpdateFromPgyer.modulemap */,
+				05131F960CCF8110DAAAFC89A4312C87 /* LEUpdateFromPgyer.xcconfig */,
+				BD31F9E8D2EBCC172A908FF06F047EF7 /* LEUpdateFromPgyer-dummy.m */,
+				3D092594C3F6E98802CB5D666E00E792 /* LEUpdateFromPgyer-prefix.pch */,
+				C3BDE9C13777DE856C52CD72636FE8CE /* LEUpdateFromPgyer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LEUpdateFromPgyer";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2C7F55B73CB425120316371848FD96D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4DF6C2399DB886589F5BEAC1743720 /* LEUpdateFromPgyer-umbrella.h in Headers */,
+				D84D26223B27E68442C5EEEF263241F5 /* LEUpdateFromPgyer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E747EC31FFBB7FF7E82FE9174C0AB684 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ABBB4578B840148A9451368F9CCB012 /* Pods-LEUpdateFromPgyer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1A877C8F33F3A431BC47BEA29F8E9C84 /* LEUpdateFromPgyer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15B64185D004D08B152428AD9F07A71C /* Build configuration list for PBXNativeTarget "LEUpdateFromPgyer" */;
+			buildPhases = (
+				6EB35BF4C9E33A48AF90A0071585E780 /* Sources */,
+				6DC4B6E80BC28BBF24DFE94722AA04C7 /* Frameworks */,
+				2C7F55B73CB425120316371848FD96D9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LEUpdateFromPgyer;
+			productName = LEUpdateFromPgyer;
+			productReference = DBE6BEA8B28DF9C3B8031FF884D1F475 /* LEUpdateFromPgyer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2B69C9A97260DA965556A67B1839F985 /* Pods-LEUpdateFromPgyer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7239C1022404861FD4708CA5A8FA9563 /* Build configuration list for PBXNativeTarget "Pods-LEUpdateFromPgyer" */;
+			buildPhases = (
+				D0CCC81AA94C5B1B533DBD65D3F91B09 /* Sources */,
+				EFA49C93533834D50E230F4CF9628DA8 /* Frameworks */,
+				E747EC31FFBB7FF7E82FE9174C0AB684 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				500F6C5271DF7DFC50F1C3A9F8E286F6 /* PBXTargetDependency */,
+			);
+			name = "Pods-LEUpdateFromPgyer";
+			productName = "Pods-LEUpdateFromPgyer";
+			productReference = E9A58FCAD618294621A4BB81938D5B2B /* Pods_LEUpdateFromPgyer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9E0AA1A0555083798C327A7F9927D24A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A877C8F33F3A431BC47BEA29F8E9C84 /* LEUpdateFromPgyer */,
+				2B69C9A97260DA965556A67B1839F985 /* Pods-LEUpdateFromPgyer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EB35BF4C9E33A48AF90A0071585E780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ABA8356226AB28DF512A4AEE3F20E8 /* LEUpdateFromPgyer-dummy.m in Sources */,
+				825A827C3B09F9BF6D156E2F5D4656C9 /* LEUpdateFromPgyer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CCC81AA94C5B1B533DBD65D3F91B09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				593AB15188B9C2A8DADDD84AF6E0998A /* Pods-LEUpdateFromPgyer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		500F6C5271DF7DFC50F1C3A9F8E286F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LEUpdateFromPgyer;
+			target = 1A877C8F33F3A431BC47BEA29F8E9C84 /* LEUpdateFromPgyer */;
+			targetProxy = D7943E4A3269BFBFEAB0656FA5F59E48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C7852B647E5630A551C3D1C67C87AB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05131F960CCF8110DAAAFC89A4312C87 /* LEUpdateFromPgyer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LEUpdateFromPgyer/LEUpdateFromPgyer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LEUpdateFromPgyer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LEUpdateFromPgyer/LEUpdateFromPgyer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LEUpdateFromPgyer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1A41B15D3AA834993ADDD808FA9D8764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		475E92EFC70C0AC5D207724DDA4E5AAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B073DFE492DD339A22D5DA5B61BD4E3 /* Pods-LEUpdateFromPgyer.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LEUpdateFromPgyer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LEUpdateFromPgyer/Pods-LEUpdateFromPgyer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LEUpdateFromPgyer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ABFA0D5CF8D6CC15EFAA55FCC668C47B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05131F960CCF8110DAAAFC89A4312C87 /* LEUpdateFromPgyer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LEUpdateFromPgyer/LEUpdateFromPgyer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LEUpdateFromPgyer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LEUpdateFromPgyer/LEUpdateFromPgyer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LEUpdateFromPgyer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC80BBB5C066539FFFC0B2127CA5D3C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BD9B935C0EDAF782F4167ACFC976E3A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24FC8C50DAD523869172CDA24E2DC43A /* Pods-LEUpdateFromPgyer.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LEUpdateFromPgyer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LEUpdateFromPgyer/Pods-LEUpdateFromPgyer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LEUpdateFromPgyer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15B64185D004D08B152428AD9F07A71C /* Build configuration list for PBXNativeTarget "LEUpdateFromPgyer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABFA0D5CF8D6CC15EFAA55FCC668C47B /* Debug */,
+				0C7852B647E5630A551C3D1C67C87AB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC80BBB5C066539FFFC0B2127CA5D3C4 /* Debug */,
+				1A41B15D3AA834993ADDD808FA9D8764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7239C1022404861FD4708CA5A8FA9563 /* Build configuration list for PBXNativeTarget "Pods-LEUpdateFromPgyer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				475E92EFC70C0AC5D207724DDA4E5AAA /* Debug */,
+				BD9B935C0EDAF782F4167ACFC976E3A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

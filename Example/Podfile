@@ -1,5 +1,5 @@
 use_frameworks!
-target 'LEUpdateFromPgyer_Tests' do
+target 'LEUpdateFromPgyer' do
   pod 'LEUpdateFromPgyer', :path => '../'
   
   
