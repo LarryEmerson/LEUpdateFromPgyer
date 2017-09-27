@@ -48,11 +48,12 @@ Singleton_implementation(LEUpdateFromPgyer)
     if(pgySettings&&pgySettings.count>0){
         for (NSInteger index=0; index<pgySettings.count; index++) {
             LEPgySettings *pgy=[pgySettings objectAtIndex:index];
+            pgy.buildVersion=nil;
             pgy.isSet=NO;
-            NSURL *URL=[NSURL URLWithString:@"http://www.pgyer.com/apiv1/user/listMyPublished"];
+            NSURL *URL=[NSURL URLWithString:@"https://www.pgyer.com/apiv2/app/listMy"];
             NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:URL];
             request.HTTPMethod=@"POST";
-            NSString *param=[NSString stringWithFormat:@"uKey=%@&_api_key=%@",pgy.uKey,pgy.apiKey];
+            NSString *param=[NSString stringWithFormat:@"_api_key=%@",pgy.apiKey];
             request.HTTPBody=[param dataUsingEncoding:NSUTF8StringEncoding];
             NSURLSession *session = [NSURLSession sharedSession];
             NSURLSessionDataTask *sessionDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
@@ -64,20 +65,20 @@ Singleton_implementation(LEUpdateFromPgyer)
                         if(list.count>0){
                             for (NSInteger i=0; i<list.count; i++) {
                                 NSDictionary *app=[list objectAtIndex:i];
-                                if([[app objectForKey:@"appIdentifier"] isEqualToString:bundleIdentifier]&&[[app objectForKey:@"appType"] intValue] == 1){
-                                    pgy.appKey=[app objectForKey:@"appKey"];
-                                    [userDefaults setObject:@(NO) forKey:pgy.appKey];
-                                    if(![userDefaults objectForKey:pgy.appKey]||![[userDefaults objectForKey:pgy.appKey] boolValue]){
-                                        NSString *appVersion=[app objectForKey:@"appVersion"];
-                                        int appVersionNo=[[app objectForKey:@"appVersionNo"] intValue];
-                                        if(pgy.version){
-                                            if(compareVersion([appVersion UTF8String], [version UTF8String]) || ([version isEqualToString: appVersion] && appVersionNo > build)){
-                                                pgy.version=appVersion;
-                                                pgy.build=appVersionNo;
+                                if([[app objectForKey:@"buildIdentifier"] isEqualToString:bundleIdentifier]&&[[app objectForKey:@"buildType"] intValue] == 1){
+                                    pgy.buildKey=[app objectForKey:@"buildKey"];
+                                    pgy.buildShortcutUrl=[app objectForKey:@"buildShortcutUrl"];
+                                    if(![userDefaults objectForKey:pgy.buildShortcutUrl]||![[userDefaults objectForKey:pgy.buildShortcutUrl] boolValue]){
+                                        NSString *buildVersion=[app objectForKey:@"buildVersion"];
+                                        int buildVersionNo=[[app objectForKey:@"buildVersionNo"] intValue];
+                                        if(pgy.buildVersion){
+                                            if(compareVersion([buildVersion UTF8String], [version UTF8String]) || ([version isEqualToString: buildVersion] && buildVersionNo > build)){
+                                                pgy.buildVersion=buildVersion;
+                                                pgy.buildVersionNo=buildVersionNo;
                                             }
                                         }else{
-                                            pgy.version=appVersion;
-                                            pgy.build=appVersionNo;
+                                            pgy.buildVersion=buildVersion;
+                                            pgy.buildVersionNo=buildVersionNo;
                                         }
                                     }
                                 }
@@ -99,9 +100,9 @@ Singleton_implementation(LEUpdateFromPgyer)
         if(!pgy.isSet){
             return;
         }
-        if(pgy.version){
+        if(pgy.buildVersion){
             if(targetPgy){
-                if(compareVersion([pgy.version UTF8String], [targetPgy.version UTF8String]) > 0 || ([targetPgy.version isEqualToString: pgy.version] && pgy.build > targetPgy.build)){
+                if(compareVersion([pgy.buildVersion UTF8String], [targetPgy.buildVersion UTF8String]) > 0 || ([targetPgy.buildVersion isEqualToString: pgy.buildVersion] && pgy.buildVersionNo > targetPgy.buildVersionNo)){
                     targetPgy=pgy;
                 }
             }else {
@@ -111,8 +112,8 @@ Singleton_implementation(LEUpdateFromPgyer)
     }
     if(targetPgy){
         dispatch_async(dispatch_get_main_queue(), ^{
-            if(compareVersion([targetPgy.version UTF8String], [version UTF8String]) > 0 || ([targetPgy.version isEqualToString: version] && targetPgy.build > build)){
-                sheet=[[UIActionSheet alloc] initWithTitle:[NSString stringWithFormat:@"%@\n%@(%d)->%@(%d)\n%@",targetPgy.title,version,build,targetPgy.version,targetPgy.build, targetPgy.detail] delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:targetPgy.canIgnore?@"永久忽略":nil otherButtonTitles:@"更新", nil];
+            if(compareVersion([targetPgy.buildVersion UTF8String], [version UTF8String]) > 0 || ([targetPgy.buildVersion isEqualToString: version] && targetPgy.buildVersionNo > build)){
+                sheet=[[UIActionSheet alloc] initWithTitle:[NSString stringWithFormat:@"%@\n%@(%d)->%@(%d)\n%@",targetPgy.title,version,build,targetPgy.buildVersion,targetPgy.buildVersionNo, targetPgy.detail] delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:targetPgy.canIgnore?@"永久忽略":nil otherButtonTitles:@"更新", nil];
                 [sheet showInView:[UIApplication sharedApplication].keyWindow];
             }
         });
@@ -120,10 +121,10 @@ Singleton_implementation(LEUpdateFromPgyer)
 }
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{ 
     if(buttonIndex==sheet.firstOtherButtonIndex){
-        NSString *url=[NSString stringWithFormat:@"https://www.pgyer.com/apiv1/app/install?_api_key=%@&aKey=%@&password=%@",targetPgy.apiKey,targetPgy.appKey,targetPgy.password];
+        NSString *url=[NSString stringWithFormat:@"itms-services://?action=download-manifest&url=https://www.pgyer.com/app/plist/%@",targetPgy.buildKey];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
     }else if(buttonIndex==sheet.destructiveButtonIndex){
-        [userDefaults setObject:@(YES) forKey:targetPgy.appKey];
+        [userDefaults setObject:@(YES) forKey:targetPgy.buildShortcutUrl];
     }
 }
 

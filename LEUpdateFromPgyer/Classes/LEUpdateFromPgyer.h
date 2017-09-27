@@ -57,9 +57,10 @@ return _instace; \
 @property (nonatomic) NSString *uKey;
 @property (nonatomic) NSString *password;
 //
-@property (nonatomic) NSString *appKey;
-@property (nonatomic) NSString *version;
-@property (nonatomic) int build;
+@property (nonatomic) NSString *buildKey;
+@property (nonatomic) NSString *buildShortcutUrl;
+@property (nonatomic) NSString *buildVersion;
+@property (nonatomic) int buildVersionNo;
 @property (nonatomic) BOOL isSet;
 -(instancetype) initWithTitle:(NSString *) title Detail:(NSString *) detail CanIgnoreUpdate:(BOOL) ignore ApiKey:(NSString *) api UKey:(NSString *) ukey Password:(NSString *) psw;
 @end
