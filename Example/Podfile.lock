@@ -1,5 +1,5 @@
 PODS:
-  - LEUpdateFromPgyer (0.0.1)
+  - LEUpdateFromPgyer (0.0.2)
 
 DEPENDENCIES:
   - LEUpdateFromPgyer (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LEUpdateFromPgyer: e744d0836d5b15756392a64efe2bc34c25d8c6f6
+  LEUpdateFromPgyer: 566e402f6e8de11d2913f6d7482852afb124871a
 
 PODFILE CHECKSUM: 54e1e18937ab060f14aa946d53d241fa18e6360f
 
