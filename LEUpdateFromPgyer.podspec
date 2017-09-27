@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LEUpdateFromPgyer'
   s.version          = '0.0.1'
-  s.summary          = 'A short description of LEUpdateFromPgyer.'
+  s.summary          = '应用自动检测新版本并提示用户允许应用内更新'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,15 +17,13 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = '配合AutoBuildIpaAndUploadToPgyer使用，方便开发阶段快速提交测试包到指定蒲公英账号，用户打开应用即可看到新的版本提示，在应用内点击更新版本，无需手动打开浏览器键入网址，密码等繁琐操作。'
 
-  s.homepage         = 'https://github.com/larryemerson@163.com/LEUpdateFromPgyer'
+  s.homepage         = 'https://github.com/larryemerson/LEUpdateFromPgyer'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'larryemerson@163.com' => 'larryemerson@163.com' }
-  s.source           = { :git => 'https://github.com/larryemerson@163.com/LEUpdateFromPgyer.git', :tag => s.version.to_s }
+  s.author           = { 'larryemerson' => 'larryemerson@163.com' }
+  s.source           = { :git => 'https://github.com/larryemerson/LEUpdateFromPgyer.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
