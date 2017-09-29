@@ -23,6 +23,7 @@
 @interface LEUpdateFromPgyer()<UIActionSheetDelegate>
 @end
 @implementation LEUpdateFromPgyer{
+    NSString *downloadUrl;
     NSUserDefaults *userDefaults;
     NSString *bundleIdentifier;
     NSString *version;
@@ -42,6 +43,7 @@ Singleton_implementation(LEUpdateFromPgyer)
     bundleIdentifier=[bundle objectForKey:@"CFBundleIdentifier"];
     version=[bundle objectForKey:@"CFBundleShortVersionString"];
     build=[[bundle objectForKey:@"CFBundleVersion"] intValue];
+    downloadUrl=[bundle objectForKey:@"PgyUpdate"];
 }
 -(void) leCheckForNewVersion{
     
@@ -121,7 +123,7 @@ Singleton_implementation(LEUpdateFromPgyer)
 }
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{ 
     if(buttonIndex==sheet.firstOtherButtonIndex){
-        NSString *url=[NSString stringWithFormat:@"itms-services://?action=download-manifest&url=https://www.pgyer.com/app/plist/%@",targetPgy.buildKey];
+        NSString *url=[NSString stringWithFormat:downloadUrl,targetPgy.buildKey];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
     }else if(buttonIndex==sheet.destructiveButtonIndex){
         [userDefaults setObject:@(YES) forKey:targetPgy.buildShortcutUrl];
